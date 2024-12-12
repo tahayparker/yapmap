@@ -26,6 +26,9 @@ def generate_wordcloud():
 
 @app.route('/')
 def index():
+    #console log to see if it is working
+    print('Wordcloud API')
+    
     return 'Wordcloud API'
 
 if __name__ == '__main__':
