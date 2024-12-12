@@ -45,7 +45,7 @@ export default function Home() {
       formData.append('text', text);
     }
     try {
-      const response = await axios.post('https://wordcloud-backend.vercel.app/api/generate', formData, {
+      const response = await axios.post('https://wordcloud-e5ly.onrender.com/api/generate', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
