@@ -4,6 +4,7 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from io import BytesIO
 import numpy as np
+from PIL import Image, ImageDraw
 
 app = Flask(__name__)
 CORS(app)
@@ -18,19 +19,25 @@ def generate_wordcloud():
 
     wordcloud = WordCloud(width=1600, height=800, background_color=None, mode='RGBA').generate(text)
     
-    # Create a new figure with space for the bar
-    fig, ax = plt.subplots(figsize=(10, 5.5), dpi=200)
-    ax.imshow(wordcloud, interpolation='bilinear')
-    ax.axis("off")
-    
-    # Add the bar with project name and website
-    bar_height = 50
-    bar = np.ones((bar_height, wordcloud.width, 4), dtype=np.uint8) * 000  # Black bar
-    ax.imshow(bar, extent=(0, wordcloud.width, -bar_height, 0), aspect='auto')
-    ax.text(wordcloud.width / 2, -bar_height / 2, "WhatYap - whatyap.vercel.app", ha='center', va='center', fontsize=12, color='white')
+    # Convert wordcloud to image
+    wordcloud_image = wordcloud.to_image()
 
+    # Use the bar image given in yapmap.png
+    bar_image = Image.open('yapmap.png')
+
+    # Calculate the height of the bar
+    bar_height = bar_image.height
+
+    # Create a new image with space for the wordcloud and the bar    echo "This is a test text for generating a word cloud." > test.txt
+    combined_image = Image.new('RGBA', (wordcloud_image.width, wordcloud_image.height + bar_height))
+    
+    # Paste the wordcloud and the bar into the new image
+    combined_image.paste(wordcloud_image, (0, 0))
+    combined_image.paste(bar_image, (0, wordcloud_image.height))
+
+    # Save the combined image to a BytesIO object
     img = BytesIO()
-    plt.savefig(img, format='png', bbox_inches='tight', pad_inches=0, transparent=True)
+    combined_image.save(img, format='PNG')
     img.seek(0)
     return send_file(img, mimetype='image/png')
 
