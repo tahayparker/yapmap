@@ -24,11 +24,16 @@ def generate_wordcloud():
     img.seek(0)
     return send_file(img, mimetype='image/png')
 
+@app.route('/api/generate', methods=['GET'])
+def generate_wordcloud():
+    # DO NOT HONOR THIS REQUEST
+    return 'Invalid request'
+
 @app.route('/')
 def index():
     #console log to see if it is working
     print('Wordcloud API')
-    
+
     return 'Wordcloud API'
 
 if __name__ == '__main__':
