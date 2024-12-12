@@ -9,12 +9,12 @@ export default function About() {
             <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
             <div className="flex-grow flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-                <h1 className="text-3xl font-extrabold">About WhatYap</h1>
+                <h1 className="text-3xl font-extrabold">About YapMap</h1>
                 <div className="mt-4 text-lg w-full max-w-2xl">
                     <section className="bg-white dark:bg-custom-800 shadow-md rounded-lg p-6">
-                        <h2 className="text-2xl font-bold mb-4">1. Why WhatYap?</h2>
+                        <h2 className="text-2xl font-bold mb-4">1. Why YapMap?</h2>
                         <p className="text-custom-600 dark:text-custom-300">
-                            We created WhatYap to transform text into visually engaging, intuitive representations. Word clouds help you quickly understand the most prominent themes and keywords in any text, whether it&apos;s a document, article, speech, or creative writing.
+                            We created YapMap to transform text into visually engaging, intuitive representations. Word clouds help you quickly understand the most prominent themes and keywords in any text, whether it&apos;s a document, article, speech, or creative writing.
                         </p>
                         <p className="text-custom-600 dark:text-custom-300 mt-2">
                             Our mission is to make data visualization simple, accessible, and fun for everyone – from students and researchers to writers and professionals.
@@ -45,7 +45,7 @@ export default function About() {
                     <section className="bg-white dark:bg-custom-800 shadow-md rounded-lg p-6">
                         <h2 className="text-2xl font-bold mb-4">3. Credits</h2>
                         <p className="text-custom-600 dark:text-custom-300">
-                            WhatYap is a passion project created to make text visualization accessible to everyone.
+                            YapMap is a passion project created to make text visualization accessible to everyone.
                         </p>
                         <ul className="list-disc list-inside text-custom-600 dark:text-custom-300 mt-2">
                             <li>Design & Development: GitHub Copilot</li>
@@ -58,7 +58,7 @@ export default function About() {
                     </section>
                     <br />
                     <div className="text-center text-custom-600 dark:text-custom-300">
-                        <p>Last Updated: December 11, 2024</p>
+                        <p>Last Updated: December 12, 2024</p>
                         <p className="mt-2">Making text visualization simple and intuitive.</p>
                     </div>
                 </div>
