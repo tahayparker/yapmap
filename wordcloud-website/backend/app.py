@@ -16,7 +16,7 @@ def generate_wordcloud():
     else:
         text = request.form['text']
 
-    wordcloud = WordCloud(width=4000, height=2000, background_color=None, mode='RGBA').generate(text)
+    wordcloud = WordCloud(width=1600, height=800, background_color=None, mode='RGBA').generate(text)
     
     # Create a new figure with space for the bar
     fig, ax = plt.subplots(figsize=(10, 5.5), dpi=200)
