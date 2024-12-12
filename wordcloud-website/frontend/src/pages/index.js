@@ -117,19 +117,19 @@ export default function Home() {
                 {loading ? (
                   <div className="loader"></div>
                 ) : (
-                  'Generate Word Cloud'
+                  'Generate YapMap'
                 )}
               </button>
             </div>
           </form>
           {imageUrl && (
             <div className="mt-8 text-center">
-              <h2 className="text-xl font-bold">Generated Word Cloud</h2>
+              <h2 className="text-xl font-bold">Generated YapMap</h2>
               <Image src={imageUrl} alt="Word Cloud" className="mt-4 mx-auto" />
               <div className="flex justify-center space-x-4 mt-4">
                 <a
                   href={imageUrl}
-                  download="wordcloud.png"
+                  download="yapmap.png"
                   className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   Download
