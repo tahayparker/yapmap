@@ -13,7 +13,7 @@ export default function Terms() {
                     <section className="bg-white dark:bg-custom-800 shadow-md rounded-lg p-6">
                         <h2 className="text-2xl font-bold mb-4">1. Introduction</h2>
                         <p className="text-custom-600 dark:text-custom-300">
-                            Welcome to WordCloud Generator. By using our service, you agree to the following terms and conditions.
+                            Welcome to WhatYap. By using our service, you agree to the following terms and conditions.
                         </p>
                     </section>
                     <br />
@@ -39,7 +39,7 @@ export default function Terms() {
                     <section className="bg-white dark:bg-custom-800 shadow-md rounded-lg p-6">
                         <h2 className="text-2xl font-bold mb-4">4. Limitation of Liability</h2>
                         <p className="text-custom-600 dark:text-custom-300">
-                            WordCloud Generator provides the service &quot;as is&quot; without any warranties. We are not responsible for any damages or losses resulting from the use of our service.
+                            WhatYap provides the service &quot;as is&quot; without any warranties. We are not responsible for any damages or losses resulting from the use of our service.
                         </p>
                     </section>
                     <br />
@@ -52,7 +52,7 @@ export default function Terms() {
                     <br />
                     <div className="text-center text-custom-600 dark:text-custom-300">
                         <p>Last Updated: December 11, 2024</p>
-                        <p className="mt-2">By using WordCloud Generator, you agree to these Terms and Conditions.</p>
+                        <p className="mt-2">By using WhatYap, you agree to these Terms and Conditions.</p>
                     </div>
                 </div>
             </div>
