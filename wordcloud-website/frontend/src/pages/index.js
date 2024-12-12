@@ -72,7 +72,8 @@ export default function Home() {
       <div className="flex-grow flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
           <div>
-            <h1 className="mt-6 text-center text-3xl font-extrabold">Word Cloud Generator</h1>
+            <h1 className="mt-6 text-center text-3xl font-extrabold">WhatYap?</h1>
+            <h2 className="mt-2 text-center text-lg">See what word is being yapped the most in your chats</h2>
           </div>
           <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
             <div className="space-y-4">
