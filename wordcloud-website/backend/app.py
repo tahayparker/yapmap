@@ -24,5 +24,9 @@ def generate_wordcloud():
     img.seek(0)
     return send_file(img, mimetype='image/png')
 
+@app.route('/')
+def index():
+    return 'Wordcloud API'
+
 if __name__ == '__main__':
     app.run()
