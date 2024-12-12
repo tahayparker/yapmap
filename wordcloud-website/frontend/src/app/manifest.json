@@ -1,6 +1,6 @@
 {
-  "name": "WhatYap?",
-  "short_name": "WhatYap?",
+  "name": "YapMap",
+  "short_name": "YapMap",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
