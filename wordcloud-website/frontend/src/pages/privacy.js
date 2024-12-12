@@ -56,8 +56,8 @@ export default function Privacy() {
                     </section>
                     <br />
                     <div className="text-center text-custom-600 dark:text-custom-300">
-                        <p>Last Updated: December 11, 2024</p>
-                        <p className="mt-2">By using WhatYap, you consent to this privacy policy.</p>
+                        <p>Last Updated: December 12, 2024</p>
+                        <p className="mt-2">By using YapMap, you consent to this privacy policy.</p>
                     </div>
                 </div>
             </div>
