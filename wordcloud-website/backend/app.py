@@ -25,9 +25,9 @@ def generate_wordcloud():
     
     # Add the bar with project name and website
     bar_height = 50
-    bar = np.ones((bar_height, wordcloud.width, 4), dtype=np.uint8) * 255  # White bar
+    bar = np.ones((bar_height, wordcloud.width, 4), dtype=np.uint8) * 000  # Black bar
     ax.imshow(bar, extent=(0, wordcloud.width, -bar_height, 0), aspect='auto')
-    ax.text(wordcloud.width / 2, -bar_height / 2, "WhatYap - whatyap.vercel.app", ha='center', va='center', fontsize=12, color='black')
+    ax.text(wordcloud.width / 2, -bar_height / 2, "WhatYap - whatyap.vercel.app", ha='center', va='center', fontsize=12, color='white')
 
     img = BytesIO()
     plt.savefig(img, format='png', bbox_inches='tight', pad_inches=0, transparent=True)
