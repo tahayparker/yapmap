@@ -43,7 +43,7 @@ def generate_wordcloud():
 
 @app.route('/')
 def index():
-    return 'Wordcloud API'
+    return 'YapMap API'
 
 if __name__ == '__main__':
     app.run()
