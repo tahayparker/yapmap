@@ -34,7 +34,7 @@ export default function About() {
                         <h2 className="text-2xl font-bold mb-4">2. How to Use</h2>
                         <ol className="list-decimal list-inside text-custom-600 dark:text-custom-300 space-y-2">
                             <li>Paste or type the text you want to visualize into the input box. Alternatively, upload a text (.txt) file.</li>
-                            <li>Click &quot;Generate Word Cloud&quot; to create your visualization.</li>
+                            <li>Click &quot;Generate YapMap&quot; to create your visualization.</li>
                             <li>Download your wordcloud.</li>
                         </ol>
                         <p className="text-custom-600 dark:text-custom-300 mt-2">
