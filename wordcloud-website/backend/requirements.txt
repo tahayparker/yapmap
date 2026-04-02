@@ -24,7 +24,7 @@ defusedxml==0.7.1
 executing==2.1.0
 fastjsonschema==2.20.0
 filelock==3.13.1
-Flask==3.1.0
+Flask==3.1.1
 Flask-Cors==5.0.0
 fonttools==4.54.1
 fqdn==1.5.1
